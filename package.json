@@ -3,6 +3,7 @@
   "version": "7.3.0",
   "description": "Personal portfolio",
   "main": "index.js",
+  "repository": "https://github.com/kauffmanes/intrepidemv7.3",
   "dependencies": {
     "angular-animate": "^1.5.11",
     "angular": "^1.6.2",
