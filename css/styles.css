@@ -97,6 +97,10 @@ strong {
   opacity: 1;
   transition: opacity 1s;
 }
+.fa-long-arrow-left {
+  position: absolute;
+  left: 24px;
+}
 .strikethrough {
   position: relative;
   display: inline-block;
@@ -197,6 +201,7 @@ strong {
 @media screen and (max-width: 499px) {
   .projects {
     padding: 24px 0;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 500px) {
@@ -214,6 +219,7 @@ strong {
   width: 100%;
   transition: all 4s;
   height: 100%;
+  transform: scale(1.1);
 }
 .projects .row > div > div {
   padding-top: 12px;
@@ -259,7 +265,7 @@ strong {
   background: rgba(0, 0, 0, 0.7);
 }
 .projects .row > div:hover img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 @media screen and (max-width: 499px) {
   .projects .row {

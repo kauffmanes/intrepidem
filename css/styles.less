@@ -104,6 +104,11 @@ strong { font-weight: bold; }
 	transition: opacity 1s;
 }
 
+.fa-long-arrow-left {
+	position: absolute;
+	left: @defaultPadding * 2;
+}
+
 .strikethrough {
 	position: relative;
 	display: inline-block;
@@ -210,6 +215,7 @@ strong { font-weight: bold; }
 	//mobile only
 	@media screen and (max-width: 499px) {
 		padding: @defaultPadding * 2 0;
+		padding-bottom: 0;
 	}
 
 	.row {
@@ -229,6 +235,7 @@ strong { font-weight: bold; }
 				width: 100%;
 				transition: all 4s;
 				height: 100%;
+				transform: scale(1.1);
 			}
 
 			> div {
@@ -282,7 +289,7 @@ strong { font-weight: bold; }
 				}
 
 				img {
-					transform: scale(1.1);
+					transform: scale(1.2);
 				}
 			}
 		}
