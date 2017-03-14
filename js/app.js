@@ -125,8 +125,8 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 
 	})
 
-	.controller('HeroController', ['$scope', '$timeout', '$q',
-		function ($scope, $timeout, $q) {
+	.controller('HeroController', ['$scope', '$state', '$timeout', '$q', '$anchorScroll',
+		function ($scope, $state, $timeout, $q, $anchorScroll) {
 
 			$scope.word = '';
 
@@ -215,6 +215,13 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 			}
 
 			startWordLoop();
+
+			$scope.goToHome = function () {
+
+				if ($state.current.name === 'home') {
+					$anchorScroll();
+				}
+			};
 
 		}
 	]);

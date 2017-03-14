@@ -8,12 +8,12 @@ $(document).ready(function () {
 
 	$($w).scroll(function () {
 
-		var $h1 = $('.hero h1');
+		var $header = $('header');
 
 		if ($w.scrollTop() > 0) {
-			$h1.addClass('scrollingHeader');
+			$header.addClass('scrollingHeader');
 		} else {
-			$h1.removeClass('scrollingHeader');
+			$header.removeClass('scrollingHeader');
 		}
 
 	});
