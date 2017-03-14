@@ -1,0 +1,417 @@
+//Colors
+@niceGray: #2d2d2d;
+@lightGray: #edecec;
+@orange: #f26522;
+@white: #fff;
+@almostWhite: rgba(0,0,0,.1);
+@transparentOrange: rgba(255, 165, 0, .7);
+
+//Utilities
+@defaultMargin: 12px;
+@defaultPadding: 12px;
+
+.niceGray-bg { background: @niceGray !important; }
+.niceGray { color: @niceGray !important; }
+.lightGray { color: @lightGray !important; }
+.white-bg { background: white !important; }
+.orange { color: @orange !important; }
+.orange-bg { background: @orange !important; }
+
+.margin-bottom { margin-bottom: @defaultMargin; }
+.padding-left-6 { padding-left: @defaultPadding * 6; }
+.padding-right-6 { padding-right: @defaultPadding * 6; }
+
+body {
+	//font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14pt;
+	color: @niceGray;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 180%;
+	color: @white;
+	text-shadow: rgba(0,0,0,.3) 0px 0px 9px;
+
+	&:hover {
+		color: darken(@white, 10%);
+		cursor: pointer;
+	}
+
+	@media screen and (max-width: 627px) {
+		font-size: 150%;
+	}
+}
+
+.scrollingHeader {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: white;
+	padding: @defaultPadding * 2 @defaultPadding * 6;
+	color: @niceGray;
+	text-shadow: none;
+	border-bottom: solid 1px rgba(0,0,0,.1);
+	z-index: 11;
+	transition: background 500ms;
+	
+	@media screen and (max-width: 628px) {
+		text-align: center;
+		width: 100%;
+		padding: @defaultPadding * 2 0;
+	}
+
+	&:hover {
+		color: lighten(black, 10%);
+	}
+}
+
+h2 {
+	color: orange;
+}
+
+h4 {
+	margin-bottom: @defaultMargin;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+.fade {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.strikethrough {
+	position: relative;
+	display: inline-block;
+
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 3px;
+		margin-top: -0.4em;
+		background: orange;
+		transform-origin: center left;
+		animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+		transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+	}
+
+	&:hover:after {
+		transform: scaleX(0);
+		transform-origin: center right;
+	}
+}
+
+.blink {
+	animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+	67% { opacity: 0; }
+}
+
+@keyframes bounce {
+	25% { left: 3px; }
+	50% { right: 6px; }
+}
+
+.hero {
+	font-family: 'Raleway', sans-serif;
+	background: @lightGray;
+	background: url('../img/pburgh-grad.jpg') no-repeat no-repeat fixed;
+	background-size: cover;
+	color: #fff;
+	padding: @defaultPadding * 6;
+	padding-top: @defaultPadding * 2;
+
+	@media screen and (max-width:627px) {
+		padding: @defaultPadding * 2;
+		h1, .description {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	> div.description {
+		padding: @defaultPadding * 5 0;
+		font-size: 200%;
+		line-height: 150%;
+
+		.word {
+			font-weight: 700;
+			background: rgba(0,0,0,.3);
+			padding: 3px 12px;
+			color: orange;
+			border-bottom: solid 3px;
+		}
+	}
+
+}
+
+.about {
+	
+	padding: @defaultPadding * 4 @defaultPadding * 3;
+	
+	@media screen and (min-width: 628px) {
+		display: flex;
+		padding: @defaultPadding * 5 @defaultPadding * 4;
+	}
+
+	> div {
+		padding: @defaultPadding;
+		line-height: 1.8em;
+		width: 100%;
+
+		@media screen and (min-width: 628px) {
+			flex: 1;
+		}
+	}
+
+	>div:first-child {
+		font-size: 150%;
+	}
+}
+
+.projects {
+
+	padding: @defaultPadding * 3;
+	
+	//mobile only
+	@media screen and (max-width:499px) {
+		padding-top: @defaultPadding * 2;
+	}
+
+	.row {
+
+		@media screen and (min-width: 500px)  {
+			display: flex;
+		}
+
+		> div {
+			cursor: pointer;
+			flex: 1;
+			// margin-right: @defaultMargin;
+			overflow: hidden;
+			position: relative;
+
+			img {
+				width: 100%;
+				transition: all 4s;
+				height: 100%;
+			}
+
+			> div {
+				padding-top: @defaultPadding;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				text-align: center;
+				color: @white;
+				background: rgba(0,0,0,0);
+				opacity: 0;
+				transition: opacity 1s, background 500ms;
+
+				> p {
+					font-size: 85%;
+					color: orange;
+				}
+
+				i {
+					color: white;
+					font-size: 50%;
+				}
+
+				h3 {
+					font-family: 'Lobster', cursive;
+					text-align: center;
+					font-size: 110%;
+					margin-top: 35%;
+					margin-bottom: @defaultMargin;
+					font-size: 160%;
+					padding-left: @defaultPadding / 2;
+					padding-right: @defaultPadding / 2;
+
+					@media screen and (max-width: 627px) and (min-width: 499px) {
+						font-size: 110%;
+					}
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+
+				div {
+					opacity: 1;
+					background: rgba(0,0,0,.7);
+				}
+
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+
+		//mobile only
+		@media screen and (max-width:499px) {
+			dislay: block;
+
+			> div {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+}
+
+.details {
+
+	h1 {
+		background: white;
+		padding: @defaultPadding * 2 @defaultPadding * 6;
+		color: @niceGray;
+		text-shadow: none;
+		border-bottom: solid 1px rgba(0,0,0,.1);
+		z-index: 11;
+	}
+
+	> section {
+
+		padding: @defaultPadding * 2 0;
+		padding-bottom: 0;
+
+		> div {
+			
+			width: 100%;
+
+			.strikethrough:after {
+				background: darken(@orange, 10%);
+				margin-top: -0.5em;
+			}
+
+			h3 {
+				color: @orange;
+				font-size: 125%;
+				font-weight: bold;
+				font-style: italic;
+				margin-bottom: @defaultMargin * 3;
+				padding: 0 @defaultPadding * 6;
+
+				a {
+					text-decoration: none;
+					color: inherit;
+					display: inline-block;
+					margin-right: @defaultMargin;
+
+					&:hover {
+						cursor: pointer;
+					}
+
+				}
+
+				i {
+					font-size: 80%;
+				}
+
+				&:hover {
+					color: darken(@orange, 10%);
+				}
+
+			}
+
+			p {
+				font-size: 90%;
+				margin: @defaultMargin * 3 0;
+				max-width: 700px;
+				line-height: 175%;
+				padding: 0 @defaultPadding * 6;
+			}
+
+			.details-img {
+				padding: @defaultPadding * 6;
+				background: @lightGray;
+
+				img {
+					width: 100%;
+					display: block;
+					padding-bottom: @defaultMargin * 4;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+.contact {
+		
+	display: block;
+
+	@media screen and (min-width: 628px) {
+		display: flex;
+	}
+	
+	background: @lightGray;
+	color: @niceGray;
+
+	> div {
+		flex: 1;
+		padding: @defaultPadding * 6;
+	}
+
+	h2 {
+		font-weight: bold;
+		font-size: 125%;
+		margin-bottom: @defaultMargin * 2;
+
+	}
+
+	a, a:visited, a:active {
+		color: @lightGray;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: darken(@lightGray, 10%);
+	}
+
+	p {
+		font-size: 90%;
+		line-height: 1.6em;
+		margin-bottom: @defaultMargin * 2;
+	}
+}
+
+//Animations
+.fade.ng-enter {
+	transition: .5s linear all;
+	opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+//Animations
+.fade.ng-leave {
+	transition: .5s linear all;
+	opacity: 1;
+}
+
+/* The finishing CSS styles for the leave animation */
+.fade.ng-leave.ng-leave-active {
+  opacity: 0;
+}
