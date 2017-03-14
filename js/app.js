@@ -10,7 +10,12 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 			url: '/',
 			views: {
 				'body@': {
-					templateUrl: 'partials/content.html'
+					templateUrl: 'partials/content.html',
+					controller: ['$scope', '$anchorScroll', function ($scope, $anchorScroll) {
+						$scope.goToHome = function () {
+							$anchorScroll();
+						};
+					}]
 				},
 				'hero@home': {
 					templateUrl: 'partials/hero.html',
@@ -35,7 +40,8 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 					templateUrl: 'partials/details.html'
 				}
 			},
-			controller: ['$state', function ($state) {
+			controller: ['$scope', '$state', '$anchorScroll', function ($scope, $state, $anchorScroll) {
+				
 				if ($state.current.name === 'project') {
 					$state.go('project.intrepidem');
 				}
