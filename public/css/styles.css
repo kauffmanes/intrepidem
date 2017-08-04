@@ -81,6 +81,8 @@ header {
 }
 h2 {
   color: orange;
+  font-size: 185%;
+  margin-bottom: 24px;
 }
 h4 {
   margin-bottom: 12px;

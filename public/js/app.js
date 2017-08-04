@@ -41,7 +41,7 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 				}
 			},
 			controller: ['$scope', '$state', '$anchorScroll', function ($scope, $state, $anchorScroll) {
-				
+
 				if ($state.current.name === 'project') {
 					$state.go('project.intrepidem');
 				}
