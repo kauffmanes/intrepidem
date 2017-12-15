@@ -129,6 +129,15 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 			}
 		});
 
+		$stateProvider.state('project.expedient', {
+			url: '/expedient',
+			views: {
+				'description@project': {
+					templateUrl: 'partials/expedient.html'
+				}
+			}
+		});
+
 	})
 
 	.controller('HeroController', ['$scope', '$state', '$timeout', '$q', '$anchorScroll',
