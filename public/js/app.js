@@ -138,6 +138,15 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 			}
 		});
 
+		$stateProvider.state('project.precautions', {
+			url: '/precautions',
+			views: {
+				'description@project': {
+					templateUrl: 'partials/precautions.html'
+				}
+			}
+		});
+
 	})
 
 	.controller('HeroController', ['$scope', '$state', '$timeout', '$q', '$anchorScroll',
