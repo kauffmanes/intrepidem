@@ -161,15 +161,18 @@ section {
 .hero {
 	font-family: 'Raleway', sans-serif;
 	background: @lightGray;
-	background: url('../img/pburgh-grad.jpg') no-repeat no-repeat fixed;
+	background: url('../img/highland.jpg') no-repeat no-repeat fixed;
 	background-size: cover;
 	color: #fff;
 	padding: @defaultPadding * 11;
 	padding-top: @defaultPadding * 7;
+	height: 300px;
 
 	@media screen and (max-width:499px) {
 		padding: @defaultPadding * 2;
 		padding-top: @defaultPadding * 5;
+		height: auto;
+
 		.description {
 			width: 100%;
 			text-align: center;
