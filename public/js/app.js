@@ -18,7 +18,7 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 					}]
 				},
 				'hero@home': {
-					templateUrl: 'partials/hero2.html',
+					templateUrl: 'partials/hero.html',
 					controller: 'HeroController'
 				},
 				'about@home': {
