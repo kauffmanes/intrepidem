@@ -238,7 +238,16 @@ angular.module('pf', ['ui.router', 'ngAnimate'])
 
 			}
 
+			function startSpaceLoop() {
+				var rocket = $('#rocket');
+				
+				$timeout(function () {
+					TweenMax.to(rocket, 6, {x:800});
+				}, 1000);
+			}
+
 			startWordLoop();
+			startSpaceLoop();
 
 			$scope.goToHome = function () {
 
