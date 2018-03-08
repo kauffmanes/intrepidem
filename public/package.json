@@ -5,13 +5,13 @@
   "main": "index.js",
   "repository": "https://github.com/kauffmanes/intrepidemv7.3",
   "dependencies": {
-    "angular-animate": "^1.5.11",
-    "angular": "^1.6.2",
-    "angular-ui-router": "^0.4.2",
-    "jquery": "^3.1.1"
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-ui-router": "^0.4.3",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "http-server": "~0.9.0",
+    "http-server": "~0.11.1",
     "less": "^2.7.3"
   },
   "keywords": [
