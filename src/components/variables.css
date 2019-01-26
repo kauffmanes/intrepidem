@@ -1,0 +1,8 @@
+:root {
+    --dandelion: #F6D55C;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('../../public/fonts/Lobster_1.3.otf');
+}
