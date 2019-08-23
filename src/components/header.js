@@ -1,34 +1,59 @@
+import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import styled from 'styled-components'
+import StyledLink from '../components/Link'
+
+const Container = styled.header`
+  background: black;
+`;
+
+const Menu = styled.nav`
+  float: right;
+  list-style: none;
+`;
+
+const MenuItem = styled.li`
+  display: inline-block;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  color: white;
+`;
+
+const Logo = styled.h1`
+  margin: 0;
+  display: inline-block;
+`;
+
+const LogoLink = styled(StyledLink)`
+  border-bottom: none;
+  color: skyblue;
+  font-size: 2rem;
+`;
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <Container>
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
+        // margin: `0 auto`,
+        // maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
+      <Logo>
+        <LogoLink
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
         >
           {siteTitle}
-        </Link>
-      </h1>
+        </LogoLink>
+      </Logo>
+      <Menu>
+        <MenuItem><StyledLink to='/projects'>Projects</StyledLink></MenuItem>
+        <MenuItem><StyledLink to='/writing'>Writing</StyledLink></MenuItem>
+        {/* <MenuItem><StyledLink t>Contact</StyledLink></MenuItem> */}
+      </Menu>
     </div>
-  </header>
+    </Container>
 )
 
 Header.propTypes = {
