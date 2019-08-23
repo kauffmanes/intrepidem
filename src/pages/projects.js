@@ -45,7 +45,6 @@ const Projects = ({
 }) => {
 
   const Projects = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <ProjectLink key={edge.node.id} post={edge.node} />)
 
   return (
