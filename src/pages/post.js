@@ -19,6 +19,10 @@ const StyledLink = styled(Link)`
   display: inline-block;
 `
 
+const Date = styled.h2`
+  color: gray;
+`;
+
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
@@ -27,7 +31,7 @@ export default function Template({ data }) {
         <BlogPost>
           <StyledLink to='/'>Back to home</StyledLink>
           <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <Date>{frontmatter.date}</Date>
           <BlogContent dangerouslySetInnerHTML={{ __html: html }} />
         </BlogPost>
     </Layout>

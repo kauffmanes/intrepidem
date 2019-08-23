@@ -1,6 +1,6 @@
 ---
 title: Deploying a Node App to DigitalOcean
-date: "2019-07-10"
+date: "2017-06-09"
 path: /writing/deploying-a-node-app-to-digital-ocean
 ---
 

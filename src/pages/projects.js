@@ -6,13 +6,14 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectLink from "../components/project-link"
+import GithubLink from "../components/github-link"
+import Anchor from "../components/Anchor"
 
 const Container = styled.div`
   display: flex;
 `;
 
 const Filters = styled.div`
-  background: black;
   color: white;
   max-width: 900px;
   padding: 4rem;
@@ -38,12 +39,19 @@ const OtherResources = styled.div`
   flex: 2;
 `;
 
+const ListDescription = styled.p`
+  margin-bottom: 3rem;
+`;
+
 const Projects = ({
   data: {
     allMarkdownRemark: { edges },
+    allGithubData: { nodes }
   },
 }) => {
 
+  const repos = nodes && nodes.length > 0 && nodes[0] && nodes[0].data && nodes[0].data.user && nodes[0].data.user.repositories && nodes[0].data.user.repositories.edges;
+  const RepoList = repos.map(repo => <GithubLink key={repo.node.name} repo={repo.node} />)
   const Projects = edges
     .map(edge => <ProjectLink key={edge.node.id} post={edge.node} />)
 
@@ -56,11 +64,14 @@ const Projects = ({
         </Filters>
         <ProjectList>
           <h1>Cool projects</h1>
+          <ListDescription>Check out some of my completed projects!</ListDescription>
           <div>{Projects}</div>
         </ProjectList>
         <OtherResources>
           <h1>Github repos</h1>
-          <p>Coming soon!</p>
+          <ListDescription>These are some recent projects I've been working on or contributing to via work, school, or fun. Many of these are in progress, so use at your own risk!</ListDescription>
+          <div>{RepoList}</div>
+          <Anchor href="https://github.com/kauffmanes?tab=repositories" target="_blank">See more >></Anchor>
         </OtherResources>
       </Container>
   </Layout>
@@ -84,6 +95,23 @@ query {
           date(formatString: "MMMM DD, YYYY")
           path
           title
+        }
+      }
+    }
+  },
+  allGithubData {
+    nodes {
+      data {
+        user {
+          repositories {
+            edges {
+              node {
+                description
+                name
+                url
+              }
+            }
+          }
         }
       }
     }

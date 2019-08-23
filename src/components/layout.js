@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import Header from "./header"
 import Footer from './footer'
 import "./layout.css"
-import starryBg from '../images/starry.jpg'
+import starryBg from '../images/starrybg.jpg'
 
 const Container = styled.div`
   padding-top: 0;
