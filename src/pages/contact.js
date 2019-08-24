@@ -61,11 +61,6 @@ class Contact extends React.Component {
 		email: "",
 		message: ""
 	}
-
-	handleSubmit = event => {
-    event.preventDefault()
-    alert(`Welcome ${this.state.name}!`)
-	}
 	
 	handleInputChange = (event) => {
 		const target = event.target
@@ -85,7 +80,7 @@ class Contact extends React.Component {
 						<Title>Contact</Title>
 					</LeftColumn>
 					<Form>
-						<form name="contact" onSubmit={this.handleSubmit} netlify>
+						<form method="POST" name="contact" netlify>
 							<Label>
 								Name
 								<input value={this.state.name} onChange={this.handleInputChange} type="text" name="name" />
