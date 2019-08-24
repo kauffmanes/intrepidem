@@ -73,8 +73,8 @@ const Writing = ({
           <Title>Writing</Title>
         </Filters>
         <PostList>
-          <h1>Intrepidem Ramblings</h1>
-          <ListDescription>This list contain all of the posts that were made on intrepidem.</ListDescription>
+          <h1>Emily talks about stuff</h1>
+          <ListDescription>This list contain all of the posts that were made on here.</ListDescription>
           <div>{Posts}</div>
         </PostList>
         <OtherResources>
