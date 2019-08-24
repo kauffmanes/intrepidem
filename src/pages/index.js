@@ -1,11 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import { Img } from "gatsby-image"
 import styled from 'styled-components'
 import Layout from "../components/layout"
-// import MeAndLoki from "../images/loki.jpg"
 import SEO from "../components/seo"
-import PostLink from '../components/post-link'
 
 const Container = styled.div`
   padding-top: 2rem;

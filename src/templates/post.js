@@ -10,6 +10,9 @@ const BlogPost = styled.div`
     max-width: 900px;
     padding: 4rem;
     margin: 0 auto;
+    @media (max-width: 480px) {
+      padding: 4rem 2rem;
+    }
 `
 
 const BlogContent = styled.div``;

@@ -8,6 +8,10 @@ import PostLink from "../components/post-link"
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 974px) {
+    display: block;
+  }
 `;
 
 const Filters = styled.div`
@@ -40,9 +44,12 @@ const OtherResources = styled.div`
 const Title = styled.h2`
   text-orientation: sideways;
   writing-mode: vertical-lr;
-  // font-family: sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
+  @media (max-width: 974px) {
+    text-orientation: unset;
+    writing-mode: unset;
+  }
 `;
 
 const ListDescription = styled.p`

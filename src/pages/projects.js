@@ -11,12 +11,16 @@ import Anchor from "../components/Anchor"
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 974px) {
+    display: block;
+  }
 `;
 
 const Filters = styled.div`
   background: black;
   color: white;
-  max-width: 900px;
+  max-width: 974px;
   padding: 4rem;
   margin: 0 auto;
   flex: 1;
@@ -25,7 +29,7 @@ const Filters = styled.div`
 const ProjectList = styled.div`
   background: black;
   color: white;
-  max-width: 900px;
+  max-width: 974px;
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
@@ -34,7 +38,7 @@ const ProjectList = styled.div`
 const OtherResources = styled.div`
   background: black;
   color: white;
-  max-width: 900px;
+  max-width: 974px;
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
@@ -47,8 +51,11 @@ const ListDescription = styled.p`
 const Title = styled.h2`
   text-orientation: sideways;
   writing-mode: vertical-lr;
-  // font-family: sans-serif;
   font-size: 3rem;
+  @media (max-width: 974px) {
+    text-orientation: unset;
+    writing-mode: unset;
+  }
 `;
 
 const Projects = ({
@@ -100,7 +107,6 @@ query {
         id
         excerpt(pruneLength: 100)
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
           path
           title
         }

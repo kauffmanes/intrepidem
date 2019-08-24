@@ -1,6 +1,6 @@
 ---
 title: Hammock City
-date: "2019-07-10"
+date: "2014"
 path: /projects/hammock-city
 ---
 

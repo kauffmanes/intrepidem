@@ -1,6 +1,6 @@
 ---
 title: Chefbev Portfolio
-date: "2019-07-10"
+date: "2019"
 path: /projects/chefbev
 ---
 

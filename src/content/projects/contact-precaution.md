@@ -1,6 +1,6 @@
 ---
 title: Contact Precaution
-date: "2019-07-10"
+date: "2019"
 path: /projects/contact-precaution
 ---
 
@@ -8,7 +8,5 @@ Often in hospitals, signs are attached to doors where specific precautions need 
 
 ![Contact Precaution](../../images/contact_precaution.png)
 
-*Project type:* Graphic design
-*Technologies used:* Adobe Photoshop CC
-
-This is a current project and more graphics will be added as they progress.
+**Project type**: Graphic design <br/>
+**Technologies used**: Adobe Photoshop CC

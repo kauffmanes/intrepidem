@@ -12,10 +12,6 @@ const PostTitle = styled.h2`
     margin-bottom: 1rem;
 `
 
-const PostDate = styled.p`
-    color: #2c2c2c;
-`;
-
 const ProjectLink = ({ post }) => (
     <Container>
         <PostTitle><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></PostTitle>

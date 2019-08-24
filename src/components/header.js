@@ -6,6 +6,9 @@ import StyledLink from '../components/Link'
 
 const Container = styled.header`
   background: black;
+  @media (max-width: 673px) {
+    min-height: 20vh;
+  }
 `;
 
 const Menu = styled.nav`

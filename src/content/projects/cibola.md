@@ -1,6 +1,6 @@
 ---
-title: Cibola
-date: "2019-07-10"
+title: Cibola Ceramic Analysis
+date: "2017"
 path: /projects/cibola
 ---
 
@@ -9,6 +9,9 @@ This project is a collaboration with <a href="http://samfee.net" target="_blank"
 This application is in active development (2016-2018).
 
 ![Cibola New](../../images/cibola-new.png)
+
 ![Cibola Dash](../../images/cibola-dash.png)
+
 ![Cibola Collapsed](../../images/cibola-collapsed.png)
+
 ![Cibola Saved](../../images/cibola-saved.png)

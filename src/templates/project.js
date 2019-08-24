@@ -19,10 +19,6 @@ const StyledLink = styled(Link)`
   display: inline-block;
 `
 
-const Date = styled.h2`
-  color: gray;
-`;
-
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
@@ -31,7 +27,6 @@ export default function Template({ data }) {
         <BlogPost>
           <StyledLink to='/projects'>Back to projects</StyledLink>
           <h1>{frontmatter.title}</h1>
-          <Date>{frontmatter.date}</Date>
           <BlogContent dangerouslySetInnerHTML={{ __html: html }} />
         </BlogPost>
     </Layout>
@@ -42,7 +37,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         path
         title
       }

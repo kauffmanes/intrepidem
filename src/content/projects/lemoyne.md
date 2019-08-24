@@ -1,6 +1,6 @@
 ---
 title: Lemoyne Community Center
-date: "2019-07-10"
+date: "2013"
 path: /projects/lemoyne-community-center
 ---
 
