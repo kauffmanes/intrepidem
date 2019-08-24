@@ -4,7 +4,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Container = styled.div`
-  display: flex;
+	display: flex;
+	@media (max-width: 673px) {
+    display: block;
+  }
 `;
 
 const Form = styled.div`
@@ -19,6 +22,14 @@ const Form = styled.div`
 		background: hotpink;
 		color: white;
 	}
+	@media (max-width: 974px) {
+		padding: 2rem;
+		flex: 2;
+	}
+	@media (max-width: 673px) {
+		display: block;
+		width: 100%;
+  }
 `
 
 const Label = styled.label`
@@ -52,7 +63,13 @@ const Title = styled.h2`
   text-orientation: sideways;
   writing-mode: vertical-lr;
   font-size: 3rem;
-  text-transform: uppercase;
+	text-transform: uppercase;
+	@media (max-width: 673px) {
+		text-align: center;
+		width: 100%;
+    text-orientation: unset;
+    writing-mode: unset;
+  }
 `
 
 class Contact extends React.Component {

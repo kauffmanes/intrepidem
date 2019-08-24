@@ -16,7 +16,7 @@ const Container = styled.div`
 
 const Filters = styled.div`
   color: white;
-  max-width: 900px;
+  max-width: 974px;
   padding: 4rem;
   margin: 0 auto;
   flex: 1;
@@ -29,7 +29,7 @@ const Filters = styled.div`
 const PostList = styled.div`
   background: black;
   color: white;
-  max-width: 900px;
+  max-width: 974px;
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
@@ -41,7 +41,7 @@ const PostList = styled.div`
 const OtherResources = styled.div`
   background: black;
   color: white;
-  max-width: 900px;
+  max-width: 974px;
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
@@ -58,6 +58,8 @@ const Title = styled.h2`
   @media (max-width: 974px) {
     text-orientation: unset;
     writing-mode: unset;
+    text-align: center;
+		width: 100%;
   }
 `;
 

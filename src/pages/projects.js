@@ -64,6 +64,8 @@ const Title = styled.h2`
   @media (max-width: 974px) {
     text-orientation: unset;
     writing-mode: unset;
+    text-align: center;
+		width: 100%;
   }
 `;
 
@@ -87,7 +89,7 @@ const Projects = ({
           <Title>PROJECTS</Title>
         </Filters>
         <ProjectList>
-          <h1>Cool projects</h1>
+          <h1>Current projects</h1>
           <ListDescription>Check out some of my completed projects!</ListDescription>
           <div>{Projects}</div>
         </ProjectList>
