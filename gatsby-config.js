@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `intrepidem`,
+    title: `Emily Kauffman`,
     description: `The personal portfolio and blog of Emily Kauffman`,
     author: `Emily Kauffman`,
   },

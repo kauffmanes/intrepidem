@@ -80,7 +80,7 @@ class Contact extends React.Component {
 						<Title>Contact</Title>
 					</LeftColumn>
 					<Form>
-						<form method="POST" name="contact" netlify data-netlify-honeypot="bot-field">
+						<form method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
 							<input type="hidden" name="bot-field" />
   						<input type="hidden" name="form-name" value="contact" />
 							<Label>
