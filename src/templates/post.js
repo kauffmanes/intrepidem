@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import Link from '../components/Link'
 
 const BlogPost = styled.div`
