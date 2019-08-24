@@ -96,7 +96,7 @@ class Contact extends React.Component {
 							</Label>
 							<Label>
 								Message
-								<textarea name="name" value={this.state.message} onChange={this.handleInputChange}/>
+								<textarea name="message" value={this.state.message} onChange={this.handleInputChange}/>
 							</Label>
 							<button type="submit">Submit</button>
 						</form>
