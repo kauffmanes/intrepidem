@@ -15,7 +15,7 @@ const Container = styled.div`
   @media (max-width: 974px) {
     display: block;
   }
-`;
+`
 
 const Filters = styled.div`
   background: black;
@@ -27,7 +27,7 @@ const Filters = styled.div`
   @media (max-width: 480px) {
     padding: 1rem;
   }
-`;
+`
 
 const ProjectList = styled.div`
   background: black;
@@ -39,7 +39,7 @@ const ProjectList = styled.div`
   @media (max-width: 480px) {
     padding: 1rem;
   }
-`;
+`
 
 const OtherResources = styled.div`
   background: black;
@@ -51,11 +51,11 @@ const OtherResources = styled.div`
   @media (max-width: 480px) {
     padding: 1rem;
   }
-`;
+`
 
 const ListDescription = styled.p`
   margin-bottom: 6rem;
-`;
+`
 
 const Title = styled.h2`
   text-orientation: sideways;
@@ -67,7 +67,7 @@ const Title = styled.h2`
     text-align: center;
 		width: 100%;
   }
-`;
+`
 
 const Projects = ({
   data: {
@@ -120,6 +120,7 @@ query {
         frontmatter {
           path
           title
+          tags
         }
       }
     }

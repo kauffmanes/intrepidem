@@ -2,6 +2,7 @@
 title: National Park Photography
 date: "2019"
 path: /projects/national-parks
+tags: photography
 ---
 
 I've been fortunate enough to roadtrip around the United States a few times. These images reflect those journeys.

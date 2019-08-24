@@ -2,6 +2,7 @@
 title: Dynamic Angular Forms
 date: "2019-08-15"
 path: /writing/dynamic-angular-forms
+tags: angular.js
 ---
 
 Reducing redundancy and maintaining optimal laziness

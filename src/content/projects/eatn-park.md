@@ -2,6 +2,7 @@
 title: Parkhurst
 date: "2014"
 path: /projects/parkhurst
+tags: graphic design
 ---
 
 <a href="https://washjeff.edu" target="_blank">Washington &amp; Jefferson College's</a> dining service, Parkhurst Dining (Eat'n Park), hired me to create advertisements for meal offerings and events, as well as maintain and design a daily menu board.

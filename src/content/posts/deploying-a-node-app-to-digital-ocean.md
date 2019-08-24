@@ -2,6 +2,7 @@
 title: Deploying a Node App to DigitalOcean
 date: "2017-06-09"
 path: /writing/deploying-a-node-app-to-digital-ocean
+tags: node.js, devops, tutorial
 ---
 
 Making use of DO cloud servers, git, nginx, and forever.js to get a node app up and running!

@@ -2,6 +2,7 @@
 title: Saving Angular form data without an internet connection
 date: "2017-06-18"
 path: /writing/saving-angular-form-data-without-an-internet-connection
+tags: angular.js
 ---
 
 And then syncing it once there is!

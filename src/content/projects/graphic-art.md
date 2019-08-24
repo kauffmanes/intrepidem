@@ -2,6 +2,7 @@
 title: Graphic Art
 date: "2014"
 path: /projects/graphic-art
+tags: graphic design
 ---
 
 This is a compilation of graphical artworks completed over the last five years.

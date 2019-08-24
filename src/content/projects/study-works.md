@@ -2,6 +2,7 @@
 title: Study-Works
 date: "2014-2015"
 path: /projects/study-works
+tags: web design
 ---
 
 StudyWorks is a product of <a href="https://ert.com" target="_blank">PHT®</a> that is a "secure online portal of all Electronic Clinical Outcome Assessment (eCOA) data collected by any PHT device" (as is stated on the PHT Corp website). My role in the project was client-side development - building out the user interface and interacting with the powerful backend. Our team followed the Agile development cycle using two week iterations.

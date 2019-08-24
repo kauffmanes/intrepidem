@@ -2,6 +2,7 @@
 title: Bug Boy IPA
 date: "2015-01-01"
 path: /projects/bug-boy-ipa
+tags: graphic design, brand design
 ---
 
 I created these beer labels for a brew hobbyist named Josiah. Josiah studied Environment Science, and had developed a "slight" affinity for all things insect. These labels reflected those interests.
