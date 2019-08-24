@@ -11,18 +11,30 @@ const Container = styled.header`
 const Menu = styled.nav`
   float: right;
   list-style: none;
+  @media (max-width: 480px) {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const MenuItem = styled.li`
   display: inline-block;
-  margin-right: 2rem;
   text-transform: uppercase;
   color: white;
+  text-align: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
 `;
 
 const Logo = styled.h1`
   margin: 0;
   display: inline-block;
+  @media (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 `;
 
 const LogoLink = styled(StyledLink)`
@@ -48,6 +60,7 @@ const Header = ({ siteTitle }) => (
         </LogoLink>
       </Logo>
       <Menu>
+        {/* <MenuItem><StyledLink to='/about'>About me</StyledLink></MenuItem> */}
         <MenuItem><StyledLink to='/projects'>Projects</StyledLink></MenuItem>
         <MenuItem><StyledLink to='/writing'>Writing</StyledLink></MenuItem>
         {/* <MenuItem><StyledLink t>Contact</StyledLink></MenuItem> */}

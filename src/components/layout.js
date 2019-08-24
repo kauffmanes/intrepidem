@@ -17,7 +17,7 @@ import starryBg from '../images/starrybg.jpg'
 
 const Container = styled.div`
   padding-top: 0;
-  background: url(${starryBg});
+  background: url(${starryBg}) fixed;
   background-size: cover;
   color: white;
 `;

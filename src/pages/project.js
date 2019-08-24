@@ -29,7 +29,7 @@ export default function Template({ data }) {
   return (
     <Layout>
         <BlogPost>
-          <StyledLink to='/writing'>Back to writing</StyledLink>
+          <StyledLink to='/projects'>Back to projects</StyledLink>
           <h1>{frontmatter.title}</h1>
           <Date>{frontmatter.date}</Date>
           <BlogContent dangerouslySetInnerHTML={{ __html: html }} />

@@ -14,6 +14,7 @@ const Container = styled.div`
 `;
 
 const Filters = styled.div`
+  background: black;
   color: white;
   max-width: 900px;
   padding: 4rem;
@@ -40,7 +41,14 @@ const OtherResources = styled.div`
 `;
 
 const ListDescription = styled.p`
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
+`;
+
+const Title = styled.h2`
+  text-orientation: sideways;
+  writing-mode: vertical-lr;
+  // font-family: sans-serif;
+  font-size: 3rem;
 `;
 
 const Projects = ({
@@ -60,7 +68,7 @@ const Projects = ({
     <SEO title="Projects" />
     <Container>
         <Filters>
-          {/* <h1>Filters</h1> */}
+          <Title>PROJECTS</Title>
         </Filters>
         <ProjectList>
           <h1>Cool projects</h1>

@@ -12,12 +12,18 @@ const Container = styled.div`
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 800px) {
+    padding: 2rem;
+    display: block;
+  }
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `
 
 const AboutMe = styled.div`
   flex: 1;
-  margin: 10vh 0;
-  margin-right: 5vw;
+  margin: 10vh 5vw;
   text-shadow: black 1px 1px 5px;
 `
 

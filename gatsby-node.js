@@ -11,10 +11,12 @@ exports.createPages = async ({ actions, graphql }) => {
 
     const { createPage } = actions
     const blogPostTemplate = path.resolve(`src/pages/post.js`)
+    const projectDetailsTemplate = path.resolve(`src/pages/project.js`)
+
     const result = await graphql(`
       {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: DESC, fields: [frontmatter___date] },
           limit: 1000
         ) {
           edges {
@@ -27,16 +29,24 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     `)
+
     if (result.errors) {
       console.log(result.errors)
       throw new Error("Things broke, see console output above")
     }
     
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      let template;
+      if (node.frontmatter.path.includes('/projects/')) {
+        template = projectDetailsTemplate
+      } else {
+        template = blogPostTemplate
+      }
       createPage({
         path: node.frontmatter.path,
-        component: blogPostTemplate,
+        component: template,
         context: {}, // additional data can be passed via context
       })
+
     })
   }

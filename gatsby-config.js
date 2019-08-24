@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `intrepidem`,
@@ -8,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        token: 'c7104d152cfe98d073f05caf01d820e32799ea39',
+        token: process.env.GITHUB_API_TOKEN,
         graphQLQuery: `
           query ($author: String = "", $userFirst: Int = 0, $searchFirst: Int = 0, $q: String = "") {
             user(login: $author) {

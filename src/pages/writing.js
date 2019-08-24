@@ -37,6 +37,18 @@ const OtherResources = styled.div`
   flex: 2;
 `;
 
+const Title = styled.h2`
+  text-orientation: sideways;
+  writing-mode: vertical-lr;
+  // font-family: sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+`;
+
+const ListDescription = styled.p`
+  margin-bottom: 6rem;
+`;
+
 const Writing = ({
   data: {
     allMarkdownRemark: { edges },
@@ -51,14 +63,15 @@ const Writing = ({
       <SEO title="Writing" />
       <Container>
         <Filters>
-          {/* <h1>Filters</h1> */}
+          <Title>Writing</Title>
         </Filters>
         <PostList>
           <h1>Intrepidem Ramblings</h1>
+          <ListDescription>This list contain all of the posts that were made on intrepidem.</ListDescription>
           <div>{Posts}</div>
         </PostList>
         <OtherResources>
-          <h1>External resources</h1>
+          <h1>Other stuff</h1>
           <p>Coming soon!</p>
         </OtherResources>
       </Container>
