@@ -17,10 +17,20 @@ const Container = styled.div`
   }
 `
 
+const Main = styled.div`
+	background: white;
+	color: black;
+	max-width: 900px;
+	padding: 4rem;
+	margin: 0 auto;
+`
+
 const AboutMe = () => (
   <Layout>
     <SEO title="About me" />
-    <Container>tbd</Container>
+    <Container>
+			<Main>hi</Main>
+		</Container>
   </Layout>
 )
 

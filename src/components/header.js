@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => (
         {/* <MenuItem><StyledLink to='/about'>About me</StyledLink></MenuItem> */}
         <MenuItem><StyledLink to='/projects'>Projects</StyledLink></MenuItem>
         <MenuItem><StyledLink to='/writing'>Writing</StyledLink></MenuItem>
-        {/* <MenuItem><StyledLink t>Contact</StyledLink></MenuItem> */}
+        <MenuItem><StyledLink to='/contact'>Contact</StyledLink></MenuItem>
       </Menu>
     </div>
     </Container>
