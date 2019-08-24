@@ -21,6 +21,9 @@ const Filters = styled.div`
   margin: 0 auto;
   flex: 1;
   background: black;
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const PostList = styled.div`
@@ -30,6 +33,9 @@ const PostList = styled.div`
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const OtherResources = styled.div`
@@ -39,6 +45,9 @@ const OtherResources = styled.div`
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const Title = styled.h2`

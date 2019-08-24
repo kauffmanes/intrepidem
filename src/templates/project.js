@@ -5,11 +5,11 @@ import Layout from '../components/layout'
 import Link from '../components/Link'
 
 const BlogPost = styled.div`
-    background: white;
-    color: black;
-    max-width: 900px;
-    padding: 4rem;
-    margin: 0 auto;
+  background: white;
+  color: black;
+  max-width: 900px;
+  padding: 4rem;
+  margin: 0 auto;
 `
 
 const BlogContent = styled.div``;

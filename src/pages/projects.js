@@ -24,6 +24,9 @@ const Filters = styled.div`
   padding: 4rem;
   margin: 0 auto;
   flex: 1;
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const ProjectList = styled.div`
@@ -33,6 +36,9 @@ const ProjectList = styled.div`
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const OtherResources = styled.div`
@@ -42,6 +48,9 @@ const OtherResources = styled.div`
   padding: 4rem;
   margin: 0 auto;
   flex: 2;
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const ListDescription = styled.p`
