@@ -16,7 +16,7 @@ As for CSS, this is also my first time using styled components. Honestly, I don'
 
 When it comes to deployment, I usually use DigitalOcean or AWS for this. In this case, I decided to try out <a href="">Netlify</a> because it's the cool kid on the block currently. And after having done so, I understand why. In about an hour, I had set up a seamless pipeline between my Github branch and Netlify, including a form handler for the contact form! All you do is add the attribute "netlify" to your form, and when Netlify is building your project, it automatically sets up a handler. The minute that my site was live, the contact form was ready to record responses. My next step here will be seeing if there's a way to automatically send an email to myself when I have a new submission, similar to what I do with SES/SNS in AWS. Altogether, the developer experience was amazing with Netlify and I will use it again.
 
-Another new change is that now the entire site will be served with HTTPS. I had set up certificates in other sites before, but for some reason, my own personal site was lacking, so I decided to practice what I preach.
+Another new change is that now the entire site will be served with HTTPS. I had set up certificates in other sites before, but for some reason, my own personal site was lacking, so I decided to practice what I preach (this is in progress).
 
 Finally, the big change was the switch from intrepidem.com to emilykauffman.com. Although I will always feel a connection to that goofy name, I thought that using emilykauffman.com would tie my content more closely to me and allow others to find me easier.
 
